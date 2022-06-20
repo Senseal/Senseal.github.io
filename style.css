@@ -311,12 +311,12 @@ padding: 1px 2px;
 }
 
 .cursor{
-	cursor: url(/Assets/Cursur.png), auto;	
+	cursor: url(./Assets/Cursur.png), auto;	
   }
 
   body {
-	cursor: url(/Assets/Cursur.png), url(/Assets/Cursur.png), 
-			url(/Assets/Cursur.png), auto;
+	cursor: url(./Assets/Cursur.png), url(./Assets/Cursur.png), 
+			url(./Assets/Cursur.png), auto;
   }
 
 /*////////////////////////////////////////////////////*/
