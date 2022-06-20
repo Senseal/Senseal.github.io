@@ -331,17 +331,6 @@ padding: 1px 2px;
 
 /**/
 
-@media  all and (max-width:900px) {
-.Jobs-mbl{
-	width: 90%;
-	background-color: rgb(103, 182, 255);
-	border: 2px solid rgb(48, 151, 247);
-	padding: 1%;
-	margin: 1%
-}
-
-}
-
 @media  all and (max-width:850px)
 /*@media declares a media query  all = all devices, screen = screen size*/
 /*we then declare break points which are the activation sizes for the query i.e scren size*/ 
@@ -376,3 +365,55 @@ padding: 1px 2px;
 	}
 	
 }
+
+
+@media  all and (max-width:700px)
+/*@media declares a media query  all = all devices, screen = screen size*/
+/*we then declare break points which are the activation sizes for the query i.e scren size*/ 
+{/*If it is mobile */
+	.bgcol1
+	{
+		background-color: rgb(207, 207, 207);/*set the colour to a horrible purple */
+	}
+	.width80/*If it is mobile make the size 100% of the page*/
+	{
+		width:100%; 
+	}
+	.mobnav
+	{
+		flex-direction:column;
+		text-align:center;
+		background-color: rgb(103, 182, 255);
+		
+	}
+
+	.profile-mbl{
+		width: 90%;
+		background-color: rgb(103, 182, 255);
+		border: 2px solid rgb(48, 151, 247);
+		padding: 1%;
+		margin: 1%
+	}	
+
+	.profile-img-mbl
+	{
+	width: 100%;
+	}
+
+	.flex-container {
+	    display: flex;
+    border: 2px rgba(200, 255, 0, 0) solid;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+			}
+	
+	.flex-container > * {
+		width: 80%;
+		margin: 10px;
+		border: 2px rgba(255, 0, 0, 0) solid;
+		overflow: hidden;
+	}
+	
+}
+
