@@ -69,8 +69,8 @@ margin-right: auto;
 
 /*padding*/ 
 .pad-TB{
-	padding-top: 0.5rem;
-	padding-bottom: 1rem;	
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;	
 }
 .pad02{
 	padding-top: 0.2rem;
@@ -104,7 +104,7 @@ margin-right: auto;
 }
 .width80/*this will contain the width setting for  80% of the page*/
 {
-	width:80%; 
+	width:95%; 
 }
 .mauto /*this will contain the margin setting for the page*/
 {
@@ -331,13 +331,13 @@ padding: 1px 2px;
 
 /**/
 
-@media  all and (max-width:850px)
+@media  all and (max-width:900px)
 /*@media declares a media query  all = all devices, screen = screen size*/
 /*we then declare break points which are the activation sizes for the query i.e scren size*/ 
 {/*If it is mobile */
 	.bgcol1
 	{
-		background-color: rgb(207, 207, 207);/*set the colour to a horrible purple */
+		background-color: rgb(219, 219, 219);/*set the colour to a horrible purple */
 	}
 	.width80/*If it is mobile make the size 100% of the page*/
 	{
@@ -361,7 +361,14 @@ padding: 1px 2px;
 
 	.profile-img-mbl
 	{
-	width: 100%;
+	width: 50%;
+	}
+
+	.flex-container > * {
+		width: 80%;
+		margin: 1px;
+		border: 2px rgba(255, 0, 0, 0) solid;
+		overflow: hidden;
 	}
 	
 }
@@ -415,5 +422,9 @@ padding: 1px 2px;
 		overflow: hidden;
 	}
 	
+}
+
+.Hide{
+	visibility: hidden;
 }
 
