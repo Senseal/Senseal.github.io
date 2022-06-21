@@ -1,7 +1,7 @@
 <html class="cursor">
 <head >
 
-<title>About us</title> <!-- this is the title of the page that appears in the top tab -->
+<title class="Window-TXT">About us</title> <!-- this is the title of the page that appears in the top tab -->
 <link href = "style.css" rel = "stylesheet" type = "text/css">
 <link href = "Windows.css" rel = "stylesheet" type = "text/css">  <!-- this links the CSS to  the HTML-->
 <link rel="stylesheet" href="https://unpkg.com/xp.css">
@@ -18,7 +18,7 @@
 </header>
 <h1 class="Title1">Senseal</h1>
 <div class="strip JconSE">
-    <p>gaming</p>
+    <p class="Window-TXT">Gaming</p>
 </div>
 
 <br>
@@ -80,6 +80,7 @@
       <p class="Window-TXT">CSS > Spaghetti </p>
       <p class="Window-TXT">Backend > None Existant</p>
       <p class="Window-TXT">Will to live > 404 </p>
+      <p class="Window-TXT">JS > Actualy does something (Help from <a href="https://twitter.com/thetimgor">Yoko</a>)</p>
       <h1 class="Window-TXT">Librarys used cause I cant be arsed to do it myself.</h1>
       <a href="https://botoxparty.github.io/XP.css/"><button>Windows XP Theme</button> </a>
       </div>
@@ -218,6 +219,13 @@
 </section>
 <footer class = "Dflex"><!-- This is a footer for the website-->
 </footer>
+<script>
+  let closeButtons = document.querySelectorAll('[aria-label="Close"]');
+for(b of closeButtons){
+    b.addEventListener("click", e => {
+        e.target.parentElement.parentElement.parentElement.style.display = "none" 
+    })
+}
+</script>
 </body>
-
 </html>
