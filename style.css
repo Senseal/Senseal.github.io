@@ -321,6 +321,10 @@ padding: 1px 2px;
 			url(./Assets/Cursur.png), auto;
   }
 
+
+
+.Halfcol-blu{
+	background: linear-gradient(90deg, #3a54ff80 50%, #fff 50%);}
 /*////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////*/    
 /*//////This section is for media Queries ////////////*/   
