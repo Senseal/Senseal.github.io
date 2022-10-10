@@ -1,5 +1,5 @@
 <html class="cursor">
-<head >
+<head>
 
 <title class="Window-TXT">Im ment to put something here?</title> <!-- this is the title of the page that appears in the top tab -->
 <link href = "style.css" rel = "stylesheet" type = "text/css">
@@ -9,8 +9,7 @@
 </head>
 
 
-<body class="bgcol1"> <!-- This contains your website content -->
-
+<body class="bgcol1" onload="playSound();"> <!-- This contains your website content -->
 <header class = " mauto Dflex Jconc" > <!-- This contains your header/banner content -->
 <img src ="./Assets/Born to sleep.png" alt="Anime girl lying face down with the caption 'Born to sleep. Awake is fuck. Never work 19 68. I am neet ma'am. 410,757,864,530 years eternal rest.'" class="logo">
 <!-- src = the images location  -->
@@ -18,7 +17,7 @@
 </header>
 <h1 class="Title1">Senseal</h1>
 <div class="strip JconSE">
-    <p class="Window-TXT">I hate it when people ask me what star sign I am. I am a sign from god. Start running.</p>
+    <p class="Window-TXT" id="randomText" ></p>
 </div>
 
 <br>
@@ -183,7 +182,6 @@
             <p class="Window-TXT"> "Impressive" - Robertão#XXXX </p>
           </div>
 </section>
-<!-- 
 <section>
   <html>
       <head>
@@ -219,7 +217,6 @@
           </div>
         </div>
 </section>
--->
 </p>
 </section>
 <footer class = "Dflex"><!-- This is a footer for the website-->
@@ -246,10 +243,41 @@ for(b of closeButtons){
         e.target.parentElement.parentElement.parentElement.style.display = "none" 
     })
 }
+
+    // Random Text Script
+    const splashTexts = [
+      "What the dog doin?",
+      "Now with Mobile surport!!",
+      "My wife left me.",
+      "Touch fluffy tail.",
+      "Y̸o̴u̵ ̷W̴i̶l̵l̸ ̴A̴t̸t̸o̵n̴e̸ ̸F̸o̴r̸ ̴Y̷o̸u̷r̸ ̵S̶i̴n̷s̵",
+      "I hate it when people ask me what star sign I am. I am a sign from god. Start running.",
+      "0x3a 0x44",
+      "Senseal@Github.com:~$ gnome-open Index.html",
+      "Is cloudflare down again?",
+      '\"Don\'t you fucking dare steal any flavour texts from me\" -Mofu',
+      "Gaming",
+      "Cant code? Ask stack overflow.",
+      "Can I just get a hug please?",
+      "I don't care who the HMRC sends I will not pay taxes.",
+      "&#8205",
+      "Did you know that Osama Bin Ladens computer was found to contain loads of pirated anime and games on it? ",
+      "🗿",
+      "Shawty had them apple bottom jeans (jeans) Boots with the jeans (jeans) The whole club was lookin' at her jeans (jeans)",
+      "What has the dog done...",
+      "Now tell me, who was in the showers at Ram Ranch?",
+      "The HMRC is looking for me.",
+      "Did you know that Osama Bin Laden liked K-on?",
+      "Saddam Hussein's hiding place is somewhere on this website.",
+    ];
+    let randomNumber = Math.floor(Math.random() * splashTexts.length);
+    let randomText = splashTexts[randomNumber];
+    document.getElementById("randomText").innerHTML = randomText;
+
+
 console.log("Closing of windows js done by everyones favorite dog girl https://twitter.com/thetimgor");
+console.log("'Shit. uh. I dunno.' - Sophie (Splash texts maker)");
 </script>
-<audio controls autoplay>
-<!--  <source src="./Assets/Opening.mp3" type="audio/mpeg"> -->
-</audio>
+<audio id="noise"></audio>
 </body>
 </html>
