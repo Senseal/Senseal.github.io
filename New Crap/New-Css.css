@@ -209,11 +209,28 @@
 
 /*end*/
 
-@media  all and (max-width:800px)
+@media  all and (max-width:700px)
 /*@media declares a media query  all = all devices, screen = screen size*/
 /*we then declare break points which are the activation sizes for the query i.e scren size*/ 
 {/*If it is mobile */
+	.bgcol1
+	{
+		background-color: rgb(207, 207, 207);/*set the colour to a horrible purple */
+	}
+	.width95/*If it is mobile make the size 100% of the page*/
+	{
+		width:100%; 
+	}
+	.mobnav
+	{
+		flex-direction:column;
+		text-align:center;	
+	}
 
+	.profile-img-mbl
+	{
+	width: 100%;
+	}
 
 	.flex-container {
 	    display: flex;
@@ -230,19 +247,6 @@
 		overflow: hidden;
 	}
 	
-}
-
-.mobnav
-{
-  flex-direction:column;
-  text-align:center; 
-}
-
-
-
-.width80/*If it is mobile make the size 100% of the page*/
-{
-  width:100%; 
 }
 
 .Hide{
