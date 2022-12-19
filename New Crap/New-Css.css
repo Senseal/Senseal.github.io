@@ -231,3 +231,21 @@
 	}
 	
 }
+
+.mobnav
+{
+  flex-direction:column;
+  text-align:center; 
+}
+
+
+
+.width80/*If it is mobile make the size 100% of the page*/
+{
+  width:100%; 
+}
+
+.Hide{
+	visibility: hidden;
+}
+
