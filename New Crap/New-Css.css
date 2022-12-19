@@ -208,13 +208,56 @@
 
 
 /*end*/
+
+@media  all and (max-width:900px)
+/*@media declares a media query  all = all devices, screen = screen size*/
+/*we then declare break points which are the activation sizes for the query i.e scren size*/ 
+{/*If it is mobile */
+	.bgcol1
+	{
+		background-color: rgba(219, 219, 219, 0);/*set the colour to a horrible purple */
+	}
+	.width95/*If it is mobile make the size 100% of the page*/
+	{
+		width:100%; 
+	}
+	.mobnav
+	{
+		flex-direction:column;
+		text-align:center;
+		
+	}
+
+	.flex-container > * {
+		width: 80%;
+		margin: 1px;
+		border: 2px rgba(255, 0, 0, 0) solid;
+		overflow: hidden;
+	}
+	
+}
+
+
 @media  all and (max-width:700px)
 /*@media declares a media query  all = all devices, screen = screen size*/
 /*we then declare break points which are the activation sizes for the query i.e scren size*/ 
 {/*If it is mobile */
+	.strip{
+    background-color: #ff5e00;
+  }
+  
+  .bgcol1
+	{
+		background-color: rgb(207, 207, 207);/*set the colour to a horrible purple */
+	}
 	.width95/*If it is mobile make the size 100% of the page*/
 	{
 		width:100%; 
+	}
+	.mobnav
+	{
+		flex-direction:column;
+		text-align:center;
 	}
 
 
@@ -238,5 +281,4 @@
 .Hide{
 	visibility: hidden;
 }
-
 
