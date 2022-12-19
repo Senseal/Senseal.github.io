@@ -1,10 +1,10 @@
 .R-body {
-    background-image: linear-gradient(to bottom, #030420, #000000 70%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    overflow-x: hidden;
+  background-image: linear-gradient(to bottom, #030420, #000000 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   }
 .r-hr{
     width: 50px;
