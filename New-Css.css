@@ -241,7 +241,7 @@
 }
 /*end*/
 
-@media  all and (max-width:75%)
+@media  all and (max-width:1200px)
 /*@media declares a media query  all = all devices, screen = screen size*/
 /*we then declare break points which are the activation sizes for the query i.e scren size*/ 
 {/*If it is mobile */
