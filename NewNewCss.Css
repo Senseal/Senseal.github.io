@@ -1,0 +1,186 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Samaritan:700|Noto%20Sans%20Samaritan:400');
+
+body {
+  font-family: 'Noto Sans Samaritan';
+  font-weight: 500;
+  color: #f4f1f0;
+  }
+
+.Small{
+    font-family: 'Noto Sans Samaritan';
+    Font-weight: 500;
+    font-size: 1rem;
+    color: #f4f1f0;
+    margin-left: 1%;
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Noto Sans Samaritan';
+  font-weight: 700;
+  color: #f4f1f0;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  margin-left: 1%;
+
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+/*Colours*/ 
+
+
+.TextColAlt{
+    color: #170b04;
+}
+
+.Background{
+    color:#160a04;
+    background-color: #160a04;
+}
+
+.Primary{
+    color:#ccac9f;
+    background-color: #ccac9f;
+    border-radius: 15px;
+    box-shadow: 10% 10% 10% 10% #ccac9f;
+}
+
+.Secondary{
+    color:#6d4232;
+    background-color: #6d4232;
+    border-radius: 15px;
+}
+
+.accent{
+    color:#821818;
+    background-color: #821818;
+    border-radius: 15px;
+}
+
+
+/*Trusty Flex Container*/
+.flex-container {
+    display: flex;
+    border: 2px rgba(255, 0, 0, 0) solid;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.flex-container > * {
+    width: 50%;
+	margin: 10px;
+    border: 2px rgba(0, 255, 0, 0) solid;
+	overflow: hidden;
+	
+}
+
+/*Text Align*/
+.Align_Cent{
+    text-align: center;
+}
+
+/*Widths*/
+
+.width95/*this will contain the width setting for  80% of the page*/
+{
+	width:95%;
+    margin:0 auto;
+}
+
+/*Image alterations */ 
+.ImgCenterSzeUp {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	padding:0.3rem;
+    border-radius: 15px;
+  }
+  .IMGcenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0.3rem;
+    border-radius: 15px;
+  }
+
+.logo{
+	width: 9rem;
+	height: auto;
+}
+
+
+/*the button*/
+
+.button-1 {
+  background-color: #821818;
+  border-radius: 10px;
+  border-style: none;
+  color: #f4f1f0;
+  cursor: pointer;
+  list-style: none;
+  margin: 0.2rem;
+  outline: none;
+  padding: 10px 2rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 2.369rem;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #82181885;
+}
+
+
+@media  all and (max-width:1350px)
+/*@media declares a media query  all = all devices, screen = screen size*/
+/*we then declare break points which are the activation sizes for the query i.e scren size*/ 
+{/*If it is mobile */
+
+
+.flex-container {
+    display: flex;
+  border: 2px rgba(200, 255, 0, 0) solid;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+    }
+
+.flex-container > * {
+  width: 100%;
+  margin: 1%;
+  border: 2px rgba(255, 0, 0, 0) solid;
+  overflow: hidden;
+}
+
+.Align_Cent{
+    text-align: Left;
+}
+
+.Hide{
+visibility: hidden;
+}
+
+}
+
