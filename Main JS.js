@@ -35,5 +35,7 @@
 console.log("Oh look Creddits, My Favourite.");
 console.log("JS used in sites old format (window colsing) https://twitter.com/thetimgor");
 console.log("'Shit. uh. I dunno.' - Sophie (Splash texts maker)");
+console.log("'Up to you! I don't mind at all whether you include me or not. - Grey-dee! (Legecy JS help)");
+
 
 
