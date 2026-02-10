@@ -1,11 +1,4 @@
-let closeButtons = document.querySelectorAll('[aria-label="Close"]');
-for(b of closeButtons){
-    b.addEventListener("click", e => {
-        e.target.parentElement.parentElement.parentElement.style.display = "none" 
-    })
-}
-
-    // Random Text Script
+//**Random Text Script**
     const splashTexts = [
       "What the dog doin?",
       "Now with Mobile surport!!",
@@ -32,11 +25,13 @@ for(b of closeButtons){
       "Fumo Fumo ᗜˬᗜ",
       "Did you know that the critically acclaimed MMORPG Final Fantasy XIV has a free trial, and includes the entirety of A Realm Reborn AND the award-winning Heavensward expansion up to level 60 with no restrictions on playtime? Sign up, and enjoy Eorzea today!",
     ];
-    let randomNumber = Math.floor(Math.random() * splashTexts.length);
-    let randomText = splashTexts[randomNumber];
-    document.getElementById("randomText").innerHTML = randomText;
-
+    var randomNumber = Math.floor(Math.random() * splashTexts.length); // Pick a random number
+    var textElement = document.getElementById("randomText"); // Get the element by ID and swap the text
+    if (textElement) {
+    textElement.innerHTML = splashTexts[randomNumber];
+    }
+//**end
 console.log("Oh look Creddits, My Favourite.");
 console.log("JS used in sites old format (window colsing) https://twitter.com/thetimgor");
 console.log("'Shit. uh. I dunno.' - Sophie (Splash texts maker)");
-console.log("Rain effect CSS and HTML - https://www.foolishdeveloper.com/2022/02/rain-animation-effects.html")
+
