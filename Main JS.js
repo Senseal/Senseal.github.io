@@ -24,7 +24,7 @@
         "Saddam Hussein's hiding place is somewhere on this website.",
         "Fumo Fumo ᗜˬᗜ",
         "Now with supprot for 3ds",
-        "Did you know that the critically acclaimed MMORPG Final Fantasy XIV has a free trial, and includes the entirety of A Realm Reborn AND the award-winning Heavensward expansion up to level 60 with no restrictions on playtime? Sign up, and enjoy Eorzea today!",
+        "Did you know that the critically acclaimed MMORPG Final Fantasy XIV has a free trial, and includes the entirety of A Realm Reborn, the award-winning Heavensward, Stormblood & Shadowbringers expansions up to level 80 with no restrictions on playtime? Sign up, and enjoy Eorzea today!",
     ];
     var randomNumber = Math.floor(Math.random() * splashTexts.length); // Pick a random number
     var textElement = document.getElementById("randomText"); // Get the element by ID and swap the text
