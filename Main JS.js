@@ -1,5 +1,5 @@
 //**Random Text Script**
-    const splashTexts = [
+    const splashTexts = [ //Creates the variable "splashTexts" to store the texts. Each one is seporated by "", 
         "What the dog doin?",
         "Now with Mobile surport!!",
         "My wife left me.",
@@ -26,10 +26,14 @@
         "Now with supprot for 3ds",
         "Did you know that the critically acclaimed MMORPG Final Fantasy XIV has a free trial, and includes the entirety of A Realm Reborn, the award-winning Heavensward, Stormblood & Shadowbringers expansions up to level 80 with no restrictions on playtime? Sign up, and enjoy Eorzea today!",
     ];
-    var randomNumber = Math.floor(Math.random() * splashTexts.length); // Pick a random number
-    var textElement = document.getElementById("randomText"); // Get the element by ID and swap the text
-    if (textElement) {
-    textElement.innerHTML = splashTexts[randomNumber];
+    var randomNumber = Math.floor(Math.random() * splashTexts.length); 
+    //Variable "randomNumber" = A random decimal number between 0 and 1 - Math.random()
+    //That is then multiplied by the length of the "splashTexts" array - splashTexts.length
+    //Then rounded to the nearrest whole interger -  Math.floor(...)
+    var textElement = document.getElementById("randomText"); //Seaches though the HTML document to find and store the eliment with the ID "randomText" in the variable "textElement"
+    if (textElement) { // if variable textElement exists (wont perform if the vairable is not set)
+    textElement.innerHTML = splashTexts[randomNumber]; // Uses the random number selected (var randomNumber) with the splashTexts array to pick out the chosesn text string
+    // replaces the old HTML content with the ID "randomText" with the randonly chosesn text
     }
 //**end
 console.log("Oh look Creddits, My Favourite.");
